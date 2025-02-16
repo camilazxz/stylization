@@ -35,7 +35,7 @@ body{
     color: white;
     background-color: #FF3E79;
 }
-.upper_menu-right .call, .upper_menu-right .chat, .upper_menu-right .profile, .upper_menu-right .checkstatus-status-remonta, .upper_menu-right .repair-ostavit-zayavku, .upper_menu-left .divider1, .mi768, .mi1120{
+.icon-uslugi, .upper_menu-right .call, .upper_menu-right .chat, .upper_menu-right .profile, .upper_menu-right .checkstatus-status-remonta, .upper_menu-right .repair-ostavit-zayavku, .upper_menu-left .divider1, .mi768, .mi1120{
     display: none;
 }
 .container-two {
