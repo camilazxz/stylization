@@ -1,15 +1,29 @@
 body{
     width: 100vw;
     height: 100vh;
+    margin-right: 0;
 }
 .upper_menu {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     align-items: center;
     border-bottom: 1px solid lightgreen;
     width: 100%; 
     height: 88px;
     color: #80949f;
+}
+.upper_menu-left .burger, .upper_menu-right .divider{
+    margin-left: 1px;
+}
+.upper_menu-right .divider{
+    margin-left: -150px;
+}
+.upper_menu div{
+    display: flex;
+}
+.upper_menu div div{
+    margin: 0 10px;
 }
 .burger, .repair, .checkstatus, .call {
     height: 40px;
@@ -21,12 +35,12 @@ body{
     color: white;
     background-color: #FF3E79;
 }
-.call, .chat, .profile, .checkstatus-status-remonta, .repair-ostavit-zayavku, .divider1, .mi768, .mi1120{
+.upper_menu-right .call, .upper_menu-right .chat, .upper_menu-right .profile, .upper_menu-right .checkstatus-status-remonta, .upper_menu-right .repair-ostavit-zayavku, .upper_menu-left .divider1, .mi768, .mi1120{
     display: none;
 }
 .container-two {
     background-color: #F8F8F8;
-    min-width: 320px;
+
     width: 100vw; 
     height: 100vh;
 }
@@ -86,16 +100,38 @@ h3 {
     .upper_menu {
         width: 100%;
         height: 88px;
-        gap: 15px;
+        gap: 10px;
+        justify-content: space-between;
     }
-    .burger{
-        margin: 20px;
-    }
-    .call{
-        margin-left: 180px;
-    }
-    .call, .chat, .profile, .divider1, .mi768{
+    .upper_menu-right div{
         display: flex;
+        gap: 20px;
+    }
+    .upper_menu-right .call{
+        display: flex;
+        order: 1;
+        margin-left: 270px;
+    }
+    .upper_menu-right .chat{
+        display: flex;
+        order: 2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .upper_menu-right .profile{
+        display: flex;
+        order: 3;
+        margin-left: 0;
+        margin-right: 170px;
+    }
+    .upper_menu-right .divider{
+        order: 4;
+    }
+    .upper_menu-right .repair{
+        order: 5;
+    }
+    .upper_menu-right .checkstatus{
+        order: 6;
     }
     h1{
     padding-top: 35px;
@@ -120,13 +156,14 @@ h3 {
         width: 290px;
     }
     .mi768{
+        display: flex;
         width: 320px;
         padding: 10px;
         padding-top: 20px;
     }
 
     .cps-img {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
     .secondmain{
@@ -140,10 +177,9 @@ h3 {
 }
 
 @media (min-width: 1120px) {
-    .upper_menu, .mi768{
+   .upper_menu{
         display: none;
     }
-
     .repair-ostavit-zayavku, .checkstatus-status-remonta, .mi1120{
         display: flex;
     }
@@ -178,4 +214,20 @@ h3 {
         left: 700px;
         padding-right: 0;
         }
+}
+.icon-uslugi{
+    display: flex;
+    gap: 20px;
+}
+.repair-ostavit-zayavku, .checkstatus-status-remonta{
+    display:  flex;
+    align-items: center;
+}
+.icon-uslugi .repair, .checkstatus{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.icon-uslugi .checkstatus{
+    margin-right: 0;
+    margin-left: 0;
 }
