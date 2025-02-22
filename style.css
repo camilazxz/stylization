@@ -162,10 +162,10 @@ h3 {
 
     .cps-img img {
     border-radius: 10px;
-    width: 550px;
+    width: 400px;
     height: 400px;
-    margin-left: -170px;
-    margin-top: -20px;
+    top: 220px;
+    position: fixed;
     }
     h3{
         margin-left: 10px;
@@ -222,8 +222,13 @@ h3 {
         padding-left: 15px;
     }
     .cps-img {
-        width: 50px;
-        border-radius: 8px;
+        position: fixed;
+        border-radius: 40px;
+        width: 550px;
+        height: 400px;
+        top: 220px;
+        left: 550px;
+        position: fixed
     }
     .secondmain{
         margin-top: 0;
@@ -231,7 +236,7 @@ h3 {
         position: relative;
         }
         .secondmain .cps-img{
-        position: absolute;
+        position: fixed;
         left: 700px;
         padding-right: 0;
         }
@@ -245,7 +250,7 @@ h3 {
             margin-top: 30px;
         }
         .icon-uslugi .repair, .checkstatus{
-            margin-left: 400px;
+            margin-left: 700px;
             margin-top: 20px;
         }
         .icon-uslugi .checkstatus{
@@ -253,4 +258,19 @@ h3 {
             margin-left: 0;
         }
         
+}
+@media (min-width: 1121px) {
+    .cps-img {
+        position: fixed;
+        border-radius: 40px;
+        height: 200px;
+        top: 250px;
+        right: 30px;
+        position: fixed
+    }
+    .mi{
+        width: 350px;
+        margin-left: 5px;
+        margin-bottom: 30px;
+    }
 }
