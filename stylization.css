@@ -1,0 +1,13 @@
+.upper-menu{
+    display: flex;
+}
+.krestik, .search{
+    color: white;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    width: 27px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
