@@ -2,14 +2,12 @@ body{
     font-size: 22px;
     margin-left: 30px;
     font-weight: normal;
+    border-right: 1px solid green;
 }
 .left-side-menu{
     background-color: #FFFFFF;
     position: sticky;
     background-position: center left;
-   
-    /*box-shadow: inset black;
-    text-shadow: 2px 4px 5px red;*/
 }
 .upper-menu{
     margin-top: 25px;
