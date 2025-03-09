@@ -1,29 +1,36 @@
 body{
     font-size: 22px;
-    margin-left: 30px;
+    padding-left: 30px;
     font-weight: normal;
-    border-right: 1px solid green;
 }
 .left-side-menu{
-    background-color: #FFFFFF;
-    position: sticky;
-    background-position: center left;
+  height: 100vh; 
+  position: absolute; 
+  left: 30px; 
+  top: 0; 
+  left: 0;
+  box-shadow: 5px 0px 100px gray;
 }
 .upper-menu{
-    margin-top: 25px;
     display: flex;
     gap: 20px;
+    margin-top: 20px;
+}
+.ic-burger{
+    
 }
 .ic-search{
     margin-left: 50px;
 }
 .maintxt{
+    font-size: 15px;
     margin-top: 20px;
     padding-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 120px;
 }
 .palochka{
-    margin-left: -30px;
+    margin-left: 1px;
 }
 .palochka, .remont{
     display: inline-block;
@@ -34,11 +41,15 @@ body{
 }
 .uslugi, .korporativnim, .prodovtsam, .partneram, .proizvoditelyam, .nashi, .contacti{
     margin-top: 30px;
+    margin-left: 30px;
 }
 .footer-ic{
    display: flex;
     gap: 20px;
     margin-bottom: 10px;
+}
+.ic-call, .chat, .profile{
+    margin-left: 20px;
 }
 .ic-call{
     color: white;
@@ -50,14 +61,19 @@ body{
     display: flex;
     justify-content: center;
 }
+.email{
+    margin-left: 20px;
+}
 .number{
-    font-size: 37px;
+    font-size: 30px;
     font-weight: 559;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 .ru{
     color: gray;
+    margin-left: 20px;
 }
 .ru, .en, .ch{
     margin-top: 50px;
